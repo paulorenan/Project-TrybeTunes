@@ -24,13 +24,19 @@ class Header1 extends React.Component {
   }
 
   render() {
-    const { usuario: { name }, isLoading } = this.state;
+    const { usuario: { name, image }, isLoading } = this.state;
     if (isLoading) return (<Loading />);
     return (
       <header data-testid="header-component">
         <div className="logoEImg">
           <img src={ logoHeader } alt="Logo header" className="logoHeader" />
-          <p data-testid="header-user-name" className="userName">{ name }</p>
+          <Link to="/profile" className="imgENome">
+            <img
+                src={ image === '' ? 'http://barcarena.pa.gov.br/portal/img/perfil/padrao.jpg' : image }
+                alt="Imagem usuario" 
+                className="userImg" />
+            <p data-testid="header-user-name" className="userName">{ name }</p>
+          </Link>
         </div>
         <nav>
           <Link

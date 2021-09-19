@@ -1,0 +1,33 @@
+.nameInput {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.linkButton {
+  display: Flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.imgUser2 {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.buttonSave {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 5px;
+}

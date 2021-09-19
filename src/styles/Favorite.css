@@ -51,6 +51,7 @@
 .favorites2 {
   background-color: rgb(3, 107, 82);
   border-right: 2px solid white;
+  border-left: 2px solid white;
   color: white;
   font-weight: 900;
   padding: 10px;

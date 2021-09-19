@@ -16,11 +16,25 @@ header {
   width: 90px;
 }
 
-.userName {
+.imgENome {
+  display: flex;
+  align-items: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-right: 2%;
   padding: 10px;
+  text-decoration: none;
+}
+
+.userImg {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.userName {
+  margin: 0;
+  margin-left: 5px;
+  color: black;
 }
 
 nav {

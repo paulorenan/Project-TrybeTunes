@@ -22,7 +22,6 @@ class Profile extends React.Component {
   pegarUsuario = async () => {
     const user = await getUser();
     this.setState({ isLoading: false, user });
-    console.log(user);
   }
 
   perfilUsuario = () => {
