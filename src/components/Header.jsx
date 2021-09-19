@@ -35,7 +35,7 @@ class Header extends React.Component {
                 src={ image === '' ? 'http://barcarena.pa.gov.br/portal/img/perfil/padrao.jpg' : image }
                 alt="Imagem usuario" 
                 className="userImg" />
-            <p data-testid="header-user-name" className="userName">{ name }</p>
+            <p data-testid="header-user-name" className="userName">{ name === '' ? 'Usuario' : name }</p>
           </Link>
         </div>
         <nav>

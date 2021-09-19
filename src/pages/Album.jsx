@@ -6,6 +6,7 @@ import MusicCard from '../components/MusicCard';
 import { addSong, removeSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Loading from '../components/Loading';
 import '../styles/Album.css';
+import Footer from '../components/Footer';
 
 class Album extends React.Component {
   constructor() {
@@ -64,25 +65,28 @@ class Album extends React.Component {
   musicaCard = () => {
     const { musicas, favorite } = this.state;
     return (
-      <div className="flexinho">
-        <div className="musicsCard">
-          <div className="musicsInfo">
-            <img src={ musicas[0].artworkUrl100 } alt="Imagem album" className="musImg" />
-            <h2 data-testid="artist-name">{musicas[0].artistName}</h2>
-            <h3 data-testid="album-name">{musicas[0].collectionName}</h3>
-          </div>
-          <div className="musics">
-            {musicas.slice(1).map((musica) => (
-              <MusicCard
-                musica={ musica }
-                key={ musica.trackId }
-                value={ musica.trackId }
-                checked={ favorite.some((song) => song.trackId === musica.trackId) }
-                onChange={ this.adicionarOuRemover }
-                className="eachMusic"
-              />))}
+      <div>
+        <div className="flexinho">
+          <div className="musicsCard">
+            <div className="musicsInfo">
+              <img src={ musicas[0].artworkUrl100 } alt="Imagem album" className="musImg" />
+              <h2 data-testid="artist-name">{musicas[0].artistName}</h2>
+              <h3 data-testid="album-name">{musicas[0].collectionName}</h3>
+            </div>
+            <div className="musics">
+              {musicas.slice(1).map((musica) => (
+                <MusicCard
+                  musica={ musica }
+                  key={ musica.trackId }
+                  value={ musica.trackId }
+                  checked={ favorite.some((song) => song.trackId === musica.trackId) }
+                  onChange={ this.adicionarOuRemover }
+                  className="eachMusic"
+                />))}
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

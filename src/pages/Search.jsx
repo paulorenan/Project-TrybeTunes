@@ -72,22 +72,15 @@ class Search extends React.Component {
           : <div className="notFound"><p>Nenhum álbum foi encontrado</p></div>}
         <div className="albums">
           { album.map(({ artistName, collectionId, collectionName, artworkUrl100 }) => (
-            <div key={ collectionId } className="albumCard">
+            <Link to={ `album/${collectionId}` } key={ collectionId } className="albumCard">
               <div className="imgCont">
                 <img src={ artworkUrl100 } alt="Album" className="albumImg" />
               </div>
               <div className="infoCont">
                 <p className="colName">{ collectionName }</p>
                 <p className="artName">{ artistName }</p>
-                <Link
-                  data-testid={ `link-to-album-${collectionId}` }
-                  to={ `album/${collectionId}` }
-                  className="link"
-                >
-                  Ir Para o Álbum
-                </Link>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <Footer />
@@ -101,7 +94,7 @@ class Search extends React.Component {
       <div data-testid="page-search">
         <Header1 />
         {isLoading ? <Loading /> : this.mainScreen()}
-        { this.listaAlbum() }
+        {isLoading ? <Loading /> : this.listaAlbum()}
       </div>
     );
   }

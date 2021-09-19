@@ -40,7 +40,7 @@ class Profile extends React.Component {
           </div>
           <div className="nome">
             <h3 className="profileH3">Nome</h3>
-            <p className="profileP">{ user.name }</p>
+            <p className="profileP">{ user.name === '' ? 'Nome não informado' : user.name }</p>
           </div>
           <div className="email">
             <h3 className="profileH3">Email</h3>
