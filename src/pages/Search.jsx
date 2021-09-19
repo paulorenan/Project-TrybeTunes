@@ -94,7 +94,7 @@ class Search extends React.Component {
       <div data-testid="page-search">
         <Header1 />
         {isLoading ? <Loading /> : this.mainScreen()}
-        {isLoading ? <Loading /> : this.listaAlbum()}
+        {isLoading ? null: this.listaAlbum()}
       </div>
     );
   }
