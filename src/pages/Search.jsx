@@ -37,7 +37,7 @@ class Search extends React.Component {
     const { nome } = this.state;
     const min = 2;
     return (
-      <form className="searchForm">
+      <form className="searchForm" onSubmit={this.procurarAlbum}>
         <label htmlFor="searchInput">
           <input
             id="searchInput"
@@ -50,7 +50,7 @@ class Search extends React.Component {
           />
         </label>
         <button
-          type="button"
+          type="submit"
           data-testid="search-artist-button"
           disabled={ nome.length < min }
           onClick={ this.procurarAlbum }
