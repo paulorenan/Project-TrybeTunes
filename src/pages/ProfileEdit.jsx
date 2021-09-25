@@ -52,19 +52,19 @@ class ProfileEdit extends React.Component {
             </div>
             <label htmlFor='nameInput' className="nameInput">
               Nome:
-              <input type="text" name="name" id="nameInput" value={ name } onChange={ this.handleChange } />
+              <input type="text" name="name" id="nameInput" value={ name } onChange={ this.handleChange } className="infoInput"/>
             </label>
             <label htmlFor="emailInput" className="nameInput">
               Email:
-              <input type="email" name="email" id="emailInput" value={ email } onChange={ this.handleChange } />
+              <input type="email" name="email" id="emailInput" value={ email } onChange={ this.handleChange } className="infoInput"/>
             </label>
             <label htmlFor="imageInput" className="nameInput">
               Imagem:
-              <input type="text" name="image" id="imageInput" value={ image } onChange={ this.handleChange } />
+              <input type="text" name="image" id="imageInput" value={ image } onChange={ this.handleChange } className="infoInput"/>
             </label>
             <label htmlFor="desInput" className="nameInput">
               {`Descrição: ${' '}`}
-              <textarea name="description" id="desInput" cols="21" rows="2" value={ description } onChange={ this.handleChange } />
+              <textarea name="description" id="desInput" cols="21" rows="2" value={ description } onChange={ this.handleChange } className="infoText"/>
             </label>
             <Link to="/profile" className="linkButton">
               <button onClick={ this.criarUsuario } className="buttonSave">Salvar Alterações</button>

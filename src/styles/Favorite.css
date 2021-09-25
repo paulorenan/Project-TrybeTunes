@@ -45,6 +45,7 @@
 }
 
 .track-title2 {
+  display: flex;
   padding: 10px;
 }
 
@@ -57,4 +58,18 @@
   padding: 10px;
   text-decoration: none;
   width: 33.4%;
+}
+
+@media screen and (max-width: 768px) {
+  .favCont2 {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .track-title2 {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
 }

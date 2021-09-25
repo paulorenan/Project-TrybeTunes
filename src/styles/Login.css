@@ -54,9 +54,24 @@ body {
   font-size: 20px;
   margin-top: 10px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .enter-button:disabled {
   background-color: lightblue;
   border-color: lightblue;
+}
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    padding: 3%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    width: 80%;
+    margin-top: 80px;
+  }
+
+  .name-input {
+    width: 93.5%;
+  }
 }

@@ -14,6 +14,7 @@
   padding: 20px;
   flex-wrap: wrap;
   width: 290px;
+  border-radius: 20px;
 }
 
 .imgLinkCard {
@@ -54,4 +55,26 @@
   padding: 10px;
   text-decoration: none;
   width: 33.4%;
+}
+
+@media screen and (max-width: 768px) {
+  .profileCard {
+    width: 230px;
+    border-radius: 20px;
+  }
+
+  .imgLinkCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+  }
+
+  .imgUser {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }

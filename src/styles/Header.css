@@ -74,3 +74,25 @@ nav {
   text-decoration: none;
   width: 33.3%;
 }
+
+@media screen and (max-width: 768px) {
+  .imgENome {
+    padding: 5px;
+  }
+  
+  .userImg {
+    width: 25px;
+  }
+  
+  .userName {
+    font-size: 13px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  .logoHeader {
+    margin-bottom: 10px;
+  }
+}
