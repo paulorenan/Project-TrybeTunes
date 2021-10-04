@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // mudar css pra grid
 import './styles/App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
