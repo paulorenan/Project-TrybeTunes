@@ -32,7 +32,7 @@ class Profile extends React.Component {
           <div className="imgLinkCard">
             <img
               data-testid="profile-image"
-              src={ user.image === '' ? 'http://barcarena.pa.gov.br/portal/img/perfil/padrao.jpg' : user.image }
+              src={ user.image === '' ? 'https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png' : user.image }
               alt="Imagem usuario"
               className="imgUser"
             />

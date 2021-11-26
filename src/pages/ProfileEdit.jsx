@@ -46,7 +46,7 @@ class ProfileEdit extends React.Component {
           <form className="profileCard">
             <div className="flexImg">
               <img
-                src={ image === '' ? 'http://barcarena.pa.gov.br/portal/img/perfil/padrao.jpg' : image }
+                src={ image === '' ? 'https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png' : image }
                 alt="Imagem usuario" 
                 className="imgUser2" />
             </div>
