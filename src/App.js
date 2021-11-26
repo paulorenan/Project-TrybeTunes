@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // mudar css pra grid
 import './styles/App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
@@ -7,7 +7,7 @@ import Album from './pages/Album';
 import Favorites from './pages/Favorites';
 import Profile from './pages/Profile';
 import ProfileEdit from './pages/ProfileEdit';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/NotFound'; // testando ssh
 
 class App extends React.Component {
   render() {
