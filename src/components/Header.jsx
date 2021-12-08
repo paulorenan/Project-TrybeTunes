@@ -32,7 +32,7 @@ class Header extends React.Component {
           <img src={ logoHeader } alt="Logo header" className="logoHeader" />
           <Link to="/profile" className="imgENome">
             <img
-                src={ image === '' ? 'http://barcarena.pa.gov.br/portal/img/perfil/padrao.jpg' : image }
+                src={ image === '' ? 'https://voxnews.com.br/wp-content/uploads/2017/04/unnamed.png' : image }
                 alt="Imagem usuario" 
                 className="userImg" />
             <p data-testid="header-user-name" className="userName">{ name === '' ? 'Usuario' : name }</p>
